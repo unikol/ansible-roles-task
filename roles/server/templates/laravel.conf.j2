@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+    ServerName localhost
+    DocumentRoot {{ laravel_app_dir }}/public
+
+    <Directory {{ laravel_app_dir }}/public>
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/laravel-error.log
+    CustomLog ${APACHE_LOG_DIR}/laravel-access.log combined
+</VirtualHost>

@@ -1,1 +1,12 @@
 ---
+- name: Configure PostgreSQL database server
+  hosts: db
+  become: true
+  roles:
+    - db
+
+- name: Configure Apache and Laravel application
+  hosts: server
+  become: true
+  roles:
+    - server

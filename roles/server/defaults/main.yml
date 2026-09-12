@@ -1,0 +1,11 @@
+---
+# Override these values with --extra-vars for a real lab environment.
+db_host: 127.0.0.1
+db_name: app_db
+db_user: app_user
+db_pass: app_pass
+
+laravel_app_dir: /var/www/laravel
+laravel_repository: https://github.com/Practical-DevOps/app-for-devops.git
+# Static only for this educational lab; set a distinct value in real environments.
+laravel_app_key: base64:K3c+BWZUNHqN8wBDuyjy7lLgwuqv9hRr+qIqKfGvK4Y=
